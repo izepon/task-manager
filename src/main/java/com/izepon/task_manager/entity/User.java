@@ -11,7 +11,6 @@ import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.scheduling.config.Task;
 
 import java.util.ArrayList;
 import java.util.List;
