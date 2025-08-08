@@ -22,9 +22,6 @@ import static org.mockito.Mockito.*;
 @ExtendWith(MockitoExtension.class)
 class TaskServiceTest {
 
-    private final static String TASK_TITLE = "New API";
-    private final static String DESCRIPTION = "Build the new API";
-
     @Mock
     private TaskRepository taskRepository;
 
@@ -33,6 +30,9 @@ class TaskServiceTest {
 
     @InjectMocks
     private TaskService taskService;
+
+    private final static String TASK_TITLE = "New API";
+    private final static String DESCRIPTION = "Build the new API";
 
     @Test
     void createTask_WhenUserExists_ShouldCreateTaskSuccessfully() {

@@ -21,14 +21,14 @@ import static org.mockito.Mockito.*;
 @ExtendWith(MockitoExtension.class)
 class UserServiceTest {
 
-    private final static String USER_TEST = "User test";
-    private final static String EMAIL_EXAMPLE = "test@example.com";
-
     @Mock
     private UserRepository userRepository;
 
     @InjectMocks
     private UserService userService;
+
+    private final static String USER_TEST = "User test";
+    private final static String EMAIL_EXAMPLE = "test@example.com";
 
     @Test
     void createUser_WhenEmailIsUnique_ShouldCreateUserSuccessfully() {

@@ -21,9 +21,6 @@ import static org.mockito.Mockito.*;
 @ExtendWith(MockitoExtension.class)
 class SubtaskServiceTest {
 
-    private final static String SUBTASK_TITLE = "Create entities";
-    private final static String DESCRIPTION = "Subtasks descriptions";
-
     @Mock
     private SubtaskRepository subtaskRepository;
 
@@ -32,6 +29,9 @@ class SubtaskServiceTest {
 
     @InjectMocks
     private SubtaskService subtaskService;
+
+    private final static String SUBTASK_TITLE = "Create entities";
+    private final static String DESCRIPTION = "Subtasks descriptions";
 
     @Test
     void createSubtask_WhenParentTaskExists_ShouldCreateSubtaskSuccessfully() {
