@@ -1,0 +1,14 @@
+# Git
+.git
+.gitignore
+
+# Maven
+target/
+.mvn/
+mvnw
+mvnw.cmd
+
+# IDEs
+.idea/
+*.iml
+.vscode/
