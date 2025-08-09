@@ -74,7 +74,7 @@ URL: http://localhost:8080/swagger-ui.html
 ### 2.Postman (Testes Manuais)
 Uma collection do Postman foi criada para facilitar os testes manuais e a validação do fluxo completo da API. Para usá-la:
 
-Importe o arquivo TaskManager.postman_collection.json no seu Postman.
+Importe o arquivo **[Task Manager API.postman_collection.json](https://github.com/user-attachments/files/21694109/Task.Manager.API.postman_collection.json)** no seu Postman.
 
 Crie um ambiente no Postman com a variável baseUrl definida como http://localhost:8080.
 
@@ -114,6 +114,7 @@ mvn test
 | GET    | `/tasks/{taskId}/subtasks`            | Lista todas as subtarefas de uma tarefa.     |
 | PATCH  | `/subtasks/{subtaskId}/status`        | Atualiza o status de uma subtarefa.          |
 
+---
 
 © [2025] [Jean Carlos Izepon]. Todos os direitos reservados.
 
